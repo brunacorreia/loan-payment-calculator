@@ -18,4 +18,4 @@ monthlyInterest = [(1 + annualInterest)<sup>(1/12)</sup>] - 1
 - <strong>accruedInterest</strong>   
 totalAccuredInterest = [initialValue * (1 + monthlyInterest)<sup>monthlyTerm</sup>] - initialValue
 ____
-Project built for IGTI Programming Bootcamp (Front-End Module).
+Project built for IGTI Programming Bootcamp (Beginner, Front-End Module).
