@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <title>Calculadora de Juros Compostos 🔢</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="content-box">
+    <h2 class="title">Simulação de Financiamento</h2>
+        <form class="form-content">
+            <label for="initial-value">Valor:</label>
+            <input id="initial-value" type="number" value='200000'/>
+
+            <label for="annual-term">Prazo (anos):</label>
+            <input id="annual-term" type="number" value='20'/>
+
+            <label for="annual-interest">Juros (ano):</label> 
+            <input id="annual-interest" type="number" value='0.08'/>
+    </form>
+    <br/>
+    <div><button type="button" id="simulate">Simular</button></div>
+      <p>
+          <h2  class="title">Resultado</h2>
+          <form class="form-content"></form>
+            <label for="monthly-term">Prazo (meses):</label> 
+            <input id="monthly-term" type="number" readonly disabled />
+      
+            <label for="monthly-interest">Juros (mês):</label> 
+            <input id="monthly-interest" type="number" readonly disabled/>
+      
+            <label for="accrued-interest">Juros acumulados:</label>
+            <input id="accrued-interest" type="number" readonly disabled />
+        </p>
+    <form class="form-content">
+    <div class="result-box">
+        <br/>
+        <table class="table-box">
+         <thead>
+           <tr class="table-title">
+             <p><th>Prestação</th>
+             <th>Amortização</th>
+             <th>Juros</th>
+             <th>Total</th></p>
+           </tr>
+         </thead>
+         <tbody id="amortization-table"></tbody>
+        </table>
+    </div>  
+    <script src="calculadora.js"></script>  
+</body>
+</html>
